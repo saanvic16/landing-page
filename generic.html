@@ -27,28 +27,204 @@
 						</ul>
 					
 					</nav>
+				<!-- Timeline Container/Main --> 
+				<div class="timeline">
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-							
-									<h3>
-										Webacy Web3 Security Data Analytics Extern</h3>
-								</header>
-								<p>-Conducted detailed analysis and labeling of smart contract vulnerabilities, enhancing skills in data categorization and risk assessment.<br/>
-									-Performed frequency and correlation analysis of risk tags to identify the most prevalent vulnerabilities and their associations, gaining proficiency in data manipulation and statistical tools. <br/> 
-									-Utilized unsupervised machine learning techniques for cluster analysis, discovering patterns and commonalities among smart contracts to profile risks effectively. <br/>
-									-Demonstrated proficiency in SQL, Excel, and Tableau, employing these tools for complex data analysis, manipulation, and visualization tasks to uncover insights into smart contract vulnerabilities and risk profiles.</p>
-								<!--<div class="image main"><img src="images/image1.jpg" alt="" /></div> -->
-								<div style="display: flex; justify-content: center; align-items: center;">
-									<img src="images/image1.jpg" alt="" style="max-width: 80%;">
-								</div>
-							</section>
-
+					<!-- Break Through Tech -->
+					<div class="timeline-item left">
+						<div class="timeline-content">
+							<h3>Break Through Tech AI Fellow</h3>
+							<span class="timeline-date">May 2025 – Present</span>
+							<ul>
+								<li>Selected from 1,500+ applicants for Cornell Tech’s 12-month AI Program at Cornell Tech</li>
+								<li>Participant in ML coursework and industry-led projects</li>
+							</ul>
+						</div>
+						<div class="timeline-image">
+							<img src="images/break_through_tech_logo.jpg" alt="Break Through Tech AI" />
+						</div>
 					</div>
+
+					<!-- NJIT URI Summer Research Fellowship -->
+					<div class="timeline-item right">
+						<div class="timeline-image">
+							<img src="images/njit_logo.jpg" alt="NJIT URI Fellowship" />
+						</div>
+						<div class="timeline-content">
+							<h3>NJIT URI Summer Research Fellowship – AI Research Fellow</h3>
+							<span class="timeline-date">Apr 2025 – Jul 2025 | Newark, NJ</span>
+							<ul>
+								<li>Designed a Python model to simulate panic wave propagation in zebrafish larvae</li>
+								<li>Integrated vision constraints and hydrodynamic interactions for behavior modeling</li>
+								<li>Presented findings at NJIT Undergraduate Research Symposium</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- NJIT Intelligible Visualization Lab -->
+					<div class="timeline-item left">
+						<div class="timeline-content">
+							<h3>Data Visualization Research Assistant – NJIT Intelligible Information Visualization Lab</h3>
+							<span class="timeline-date">Sept 2025 – Jun 2025 | Newark, NJ</span>
+							<ul>
+								<li>Researched methods to align automated captioning with semantic levels</li>
+								<li>Refined model outputs for improved clarity and usability</li>
+								<li>Evaluated captioning tools using accessibility metrics</li>
+							</ul>
+						</div>
+						<div class="timeline-image">
+							<img src="images/njit_logo.jpg" alt="Visualization Lab" />
+						</div>
+					</div>
+
+					<!-- CareerDay -->
+					<div class="timeline-item right">
+						<div class="timeline-image">
+							<img src="images/CareerDay.jpg" alt="CareerDay Internship" />
+						</div>
+						<div class="timeline-content">
+							<h3>Full Stack Engineer Intern – CareerDay</h3>
+							<span class="timeline-date">Aug 2024 – Feb 2025 | New York, NY</span>
+							<ul>
+								<li>Engineered responsive web pages using HTML, CSS, JavaScript, React.js</li>
+								<li>Built RESTful APIs with Node.js/Python; managed MySQL/MongoDB databases</li>
+								<li>Streamlined workflows through Git and collaborative coding</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Headstarter -->
+					<div class="timeline-item left">
+						<div class="timeline-content">
+							<h3>Software Engineering Fellow – Headstarter</h3>
+							<span class="timeline-date">Jul 2024 – Sept 2024 | New York, NY</span>
+							<ul>
+								<li>Built/deployed 5 AI projects using React.js, Next.js, Firebase in 5 weeks</li>
+								<li>Collaborated with mentors from Google, Y Combinator, Stanford</li>
+							</ul>
+						</div>
+						<div class="timeline-image">
+							<img src="images/headstarter.jpg" alt="Headstarter Fellowship" />
+						</div>
+					</div>
+
+					<!-- Webacy -->
+					<div class="timeline-item right">
+						<div class="timeline-image">
+							<img src="images/image1.jpg" alt="Webacy Externship" />
+						</div>
+						<div class="timeline-content">
+							<h3>Web3 Security Data Analytics Extern – Webacy</h3>
+							<span class="timeline-date">Jan 2024 – May 2024</span>
+							<ul>
+								<li>Conducted detailed analysis and labeling of smart contract vulnerabilities</li>
+								<li>Performed frequency and correlation analysis of risk tags</li>
+								<li>Utilized unsupervised ML techniques for cluster analysis</li>
+								<li>Demonstrated proficiency in SQL, Excel, and Tableau</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Timeline CSS -->
+				<style>
+					.timeline {
+						position: relative;
+						max-width: 1100px;
+						margin: 3em auto;
+					}
+					.timeline::after {
+						content: '';
+						position: absolute;
+						width: 3px;
+						background-color: #6cbf84; /* pastel green line */
+						top: 0;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+					.timeline-item {
+						display: flex;
+						justify-content: space-between;
+						position: relative;
+						width: 50%;
+						padding: 1em 2em;
+					}
+					.timeline-item.left { left: 0; }
+					.timeline-item.right { left: 50%; flex-direction: row-reverse; }
+
+					.timeline-item::before {
+						content: '';
+						position: absolute;
+						top: 20px;
+						width: 18px;
+						height: 18px;
+						background: #6cbf84;
+						border: 3px solid #fff;
+						border-radius: 50%;
+						z-index: 1;
+					}
+					.timeline-item.left::before { right: -9px; }
+					.timeline-item.right::before { left: -9px; }
+
+					.timeline-content {
+						background: #fff;
+						padding: 1.5em;
+						border-radius: 12px;
+						box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+						width: 80%;
+					}
+					.timeline-content h3 {
+						margin: 0 0 0.3em;
+						font-size: 1.1em;
+						color: #222;
+					}
+					.timeline-date {
+						font-size: 0.9em;
+						color: #6cbf84;
+						display: block;
+						margin-bottom: 0.8em;
+					}
+					.timeline-content ul {
+						margin: 0;
+						padding-left: 1.2em;
+					}
+					.timeline-content ul li {
+						margin-bottom: 0.5em;
+						line-height: 1.5;
+					}
+
+					.timeline-image {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 80px;
+					}
+					.timeline-image img {
+						width: 70px;
+						height: 70px;
+						object-fit: cover;
+						border-radius: 50%;
+						box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+					}
+
+					/* Responsive */
+					@media (max-width: 768px) {
+						.timeline::after { left: 20px; }
+						.timeline-item {
+							width: 100%;
+							padding-left: 50px;
+							padding-right: 0;
+							margin-bottom: 2em;
+						}
+						.timeline-item.right { left: 0; flex-direction: row; }
+						.timeline-item::before { left: 12px; }
+						.timeline-content { width: calc(100% - 100px); }
+					}
+				</style>
+
+
 
 				<!-- Footer -->
 					<footer id="footer">
