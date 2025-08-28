@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title>Landing Page</title>
@@ -9,39 +8,128 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+	
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Home</a>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Home</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Experience</a></li>
+					<li class="active"><a href="elements.html">Projects</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<section class="post">
+					<header class="major">
+						<h1>Projects</h1>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Experience</a></li>
-							<li class="active"><a href="elements.html">Projects</a></li>
-						</ul>
-						
-					</nav>
+					<!-- Projects Grid -->
+					<div class="projects-grid">
 
-				<!-- Main -->
-					<div id="main">
+						<!-- Project 1 -->
+						<div class="project-card">
+							<h3>Churn Classifier <span class="project-date">| June 2025</span></h3>
+							<p><em>Machine Learning Project</em></p>
+							<ul>
+								<li>Built logistic regression model to predict telecom customer churn</li>
+								<li>Achieved 71% accuracy; evaluated with log loss and accuracy</li>
+								<li><b>Tools:</b> Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn</li>
+							</ul>
+						</div>
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Projects</h1>
-								</header>
+						<!-- Project 2 -->
+						<div class="project-card">
+							<h3>SafePath <span class="project-date">| March 2025</span></h3>
+							<p><em>HackPrinceton Project – Health AI</em></p>
+							<ul>
+								<li>Built elderly monitoring app with geofencing alerts & facial recognition</li>
+								<li>Implemented real-time location tracking with personalized safety zones</li>
+								<li>Integrated Google Gemini API for AI-driven chatbot assistance</li>
+							</ul>
+						</div>
 
-								<!-- Text stuff -->
-									
-									<p></p> <b>Come back for future updates!</b> </p>
-									
-		<!-- Scripts -->
+						<!-- Project 3 -->
+						<div class="project-card">
+							<h3>Web Scraper with RAG Integration <span class="project-date">| August 2024</span></h3>
+							<p><em>Team Project</em></p>
+							<ul>
+								<li>Implemented a web scraper to extract data from Rate My Professor</li>
+								<li>Integrated data into a RAG pipeline using LangChain & GPT-4</li>
+							</ul>
+						</div>
+
+						<!-- Project 4 -->
+						<div class="project-card">
+							<h3>Pantry Tracker <span class="project-date">| July 2024</span></h3>
+							<p><em>Personal Project</em></p>
+							<ul>
+								<li>Built & deployed pantry management app with React.js, Next.js, Firebase, Clerk, Vercel</li>
+								<li>Used agile sprints to deliver incremental improvements</li>
+							</ul>
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+			<!-- Projects CSS -->
+			<style>
+				.projects-grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+					gap: 2em;
+					margin-top: 2em;
+				}
+				.project-card {
+					background: #fff;
+					border-radius: 12px;
+					box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+					padding: 1.5em;
+					transition: transform 0.2s ease, box-shadow 0.2s ease;
+				}
+				.project-card:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+				}
+				.project-card h3 {
+					margin: 0;
+					color: #222;
+					font-size: 1.2em;
+				}
+				.project-date {
+					color: #6cbf84;
+					font-weight: normal;
+					font-size: 0.9em;
+				}
+				.project-card p {
+					margin: 0.3em 0 0.8em;
+					font-style: italic;
+					color: #555;
+				}
+				.project-card ul {
+					margin: 0;
+					padding-left: 1.2em;
+				}
+				.project-card ul li {
+					margin-bottom: 0.5em;
+					line-height: 1.5;
+				}
+			</style>
+
+			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -50,5 +138,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		</div>
 	</body>
 </html>
